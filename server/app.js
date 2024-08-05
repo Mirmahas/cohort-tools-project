@@ -42,7 +42,7 @@ app.use("/auth", authRoutes);
 
 // // // User routes
 const userRoutes = require("./routes/User.routes");
-app.use("/api/users", userRoutes);
+app.use("/api/users", isAuthenticated, userRoutes);
 // // Use error handlers
 app.use(notFoundHandler);
 app.use(errorHandler);

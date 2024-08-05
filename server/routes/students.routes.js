@@ -1,5 +1,5 @@
 const router = require("express").Router();
-// const Cohorts = require("../models/cohorts.model");
+
 const Students = require("../models/students.model");
 
 router.post("/students", (req, res, next) => {
